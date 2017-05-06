@@ -7,12 +7,15 @@ SRP=spideroak.sh
 SRC=.spideroak.rc
 
 # Directories
-SERV=/usr/lib/systemd/system
-SCRI=/usr/lib/systemd/scripts
+SERV=/lib/systemd/system
+SCRI=/usr/local/lib/systemd/scripts
+
+echo "Creating directories..."
+mkdir -v -p $SRCI
 
 echo "Copying Service file and Script"
-cp $SRV $SERV
-cp $SRP $SCRI/${SRP%.sh}
+cp -v $SRV $SERV
+cp -v $SRP $SCRI/${SRP%.sh}
 
 echo "Copying RC file to user dir"
-cp $SRC $HOME
+cp -v $SRC $HOME
