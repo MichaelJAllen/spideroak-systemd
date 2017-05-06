@@ -9,4 +9,4 @@ WantedBy=multi-user.target
 [Service]
 Type=simple
 User=%i
-ExecStart=/usr/lib/systemd/scripts/spideroak
+ExecStart=/usr/local/lib/systemd/scripts/spideroak
