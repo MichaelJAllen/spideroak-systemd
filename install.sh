@@ -11,7 +11,7 @@ SERV=/lib/systemd/system
 SCRI=/usr/local/lib/systemd/scripts
 
 echo "Creating directories..."
-mkdir -v -p $SRCI
+mkdir -v -p $SCRI
 
 echo "Copying Service file and Script"
 cp -v $SRV $SERV
