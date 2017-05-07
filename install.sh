@@ -19,3 +19,7 @@ cp -v $SRP $SCRI/${SRP%.sh}
 
 echo "Copying RC file to user dir"
 cp -v $SRC $HOME
+
+echo "Configuring spideroak@root.service to start at boot..."
+systemctl enable spideroak@root
+
